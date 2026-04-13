@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facial Recognition Attendance System</title>
+    <meta
+      name="description"
+      content="A one-page marketing website for a university Final Year Project: Facial Recognition Attendance System."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Facial Recognition Attendance System home">
+        VisionAttend
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1800&q=86"
+            alt=""
+          />
+        </div>
+        <div class="hero-shade"></div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">AI Smart Campus</p>
+          <h1>Facial Recognition Attendance System</h1>
+          <p class="hero-copy">
+            A modern attendance platform that uses facial recognition to verify students, automate classroom records,
+            and help lecturers reduce manual work with a faster, cleaner and more secure process
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#solution">Explore Project</a>
+            <a class="button button-secondary" href="#workflow">View Demo Flow</a>
+            <a class="button button-ghost" href="#contact">Contact Team</a>
+          </div>
+        </div>
+
+        <div class="hero-dashboard reveal" aria-label="Live attendance preview">
+          <div class="scan-frame">
+            <div class="scan-line"></div>
+            <div class="face-grid">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="dashboard-copy">
+            <p>Live session</p>
+            <strong>39 verified</strong>
+            <span>3 pending matches</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#problem" aria-label="Scroll to project background">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="section intro-band" id="problem">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Background</p>
+          <h2>Attendance should feel invisible</h2>
+          <p>
+            Traditional attendance methods can create avoidable admin work, and leave room for
+            inaccurate records
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="panel reveal">
+            <span class="panel-index">01</span>
+            <h3>Manual roll calls</h3>
+            <p>Slow for large classes and disruptive during lectures, labs, and tutorials</p>
+          </article>
+          <article class="panel reveal">
+            <span class="panel-index">02</span>
+            <h3>Bluetooth check-ins</h3>
+            <p>Dependent on student devices, signal reliability, and stable connectivity</p>
+          </article>
+          <article class="panel reveal">
+            <span class="panel-index">03</span>
+            <h3>Card-based systems</h3>
+            <p>Cards can be lost, shared, or used for proxy attendance without identity verification</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="solution">
+        <div class="product-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=86"
+            alt="Student using a laptop in a modern learning environment"
+          />
+          <div class="visual-label">
+            <span>AI Recognition Pipeline</span>
+            <strong>MTCNN + FaceNet</strong>
+          </div>
+        </div>
+
+        <div class="split-copy reveal">
+          <p class="eyebrow">Solution</p>
+          <h2>Secure attendance, captured automatically.</h2>
+          <p>
+            VisionAttend uses AI-powered face detection and recognition to identify students in classroom environments,
+            mark attendance automatically and provide lecturers with a clear record of every session
+          </p>
+
+          <div class="objective-list">
+            <div>
+              <strong>Real-time AI</strong>
+              <span>Face detection and recognition using MTCNN and FaceNet</span>
+            </div>
+            <div>
+              <strong>Higher accuracy</strong>
+              <span>Reduced proxy attendance through biometric verification</span>
+            </div>
+            <div>
+              <strong>Lecturer friendly</strong>
+              <span>Attendance monitoring designed for fast class-level review</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section objectives-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Objectives</p>
+          <h2>Designed with classroom reality in mind</h2>
+        </div>
+
+        <div class="objectives-track">
+          <article class="objective-card reveal">
+            <h3>AI-powered attendance</h3>
+            <p>Develop an attendance system for practical classroom environments</p>
+          </article>
+          <article class="objective-card reveal">
+            <h3>Face detection pipeline</h3>
+            <p>Implement real-time face detection and recognition with MTCNN and FaceNet</p>
+          </article>
+          <article class="objective-card reveal">
+            <h3>Proxy prevention</h3>
+            <p>Improve attendance accuracy by verifying identity through facial recognition</p>
+          </article>
+          <article class="objective-card reveal">
+            <h3>Dashboard concept</h3>
+            <p>Provide lecturers with a clean interface for reviewing attendance records</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section features-section" id="features">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Key Features</p>
+          <h2>Built for speed, trust, and clarity</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span>01</span>
+            <h3>Real-time face recognition</h3>
+            <p>Detects and identifies students during attendance capture</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>02</span>
+            <h3>Automated attendance logging</h3>
+            <p>Records attendance without repeated manual input from lecturers</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>03</span>
+            <h3>Fraud prevention</h3>
+            <p>Helps reduce proxy attendance through identity-based verification</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>04</span>
+            <h3>Attendance dashboard</h3>
+            <p>Summarizes present, absent, pending, and verified student records</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>05</span>
+            <h3>Timestamped records</h3>
+            <p>Stores when attendance was captured for session review and reporting</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>06</span>
+            <h3>Smart classroom integration</h3>
+            <p>Designed for future use with cameras, campus systems and access control</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How It Works</p>
+          <h2>A simple flow from face capture to attendance record</h2>
+        </div>
+
+        <div class="workflow">
+          <div class="workflow-step reveal">
+            <span>1</span>
+            <h3>Camera captures face</h3>
+            <p>The system receives a classroom image or video frame</p>
+          </div>
+          <div class="workflow-step reveal">
+            <span>2</span>
+            <h3>MTCNN detects and aligns</h3>
+            <p>The face is located, cropped and prepared for recognition</p>
+          </div>
+          <div class="workflow-step reveal">
+            <span>3</span>
+            <h3>FaceNet creates embeddings</h3>
+            <p>The face is converted into a compact identity representation</p>
+          </div>
+          <div class="workflow-step reveal">
+            <span>4</span>
+            <h3>Database comparison</h3>
+            <p>The embedding is matched against stored student profiles</p>
+          </div>
+          <div class="workflow-step reveal">
+            <span>5</span>
+            <h3>Attendance is marked</h3>
+            <p>A verified attendance record is created automatically</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stack-section" id="stack">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technology Stack</p>
+          <h2>Practical AI and web tools for a complete prototype</h2>
+        </div>
+
+        <div class="stack-cloud reveal" aria-label="Technology stack">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>DeepFace</span>
+          <span>MTCNN</span>
+          <span>FaceNet</span>
+          <span>Flask / FastAPI</span>
+          <span>PostgreSQL / MongoDB</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </section>
+
+      <section class="section relevance-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Market Relevance</p>
+          <h2>Aligned with real-world identity and access systems.</h2>
+          <p>
+            Facial recognition is already used in smart campuses, security systems, access control, e-gates, and
+            identity verification. This project brings that direction into a focused academic use case
+          </p>
+        </div>
+
+        <div class="use-case-strip reveal">
+          <span>Classrooms</span>
+          <span>Lecture halls</span>
+          <span>Labs</span>
+          <span>Smart campus access</span>
+          <span>Corporate training</span>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-visual reveal" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=86"
+            alt=""
+          />
+        </div>
+
+        <div class="contact-content reveal">
+          <p class="eyebrow">Team / Contact</p>
+          <h2>Ready for deployment and real-world use</h2>
+          <p>
+            Our solution is designed for real-world deployment, supporting organizations that are looking to modernize their attendance systems with AI-driven automation
+          </p>
+
+          <div class="team-list">
+            <span>Project Lead: Student Name</span>
+            <span>AI Engineer: Student Name</span>
+            <span>Web Developer: Student Name</span>
+          </div>
+
+          <a class="button button-primary" href="mailto:lhdwhye001@mymail.sim.edu.sg">Request Project Demo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Facial Recognition Attendance System</span>
+      <span>Final Year Project Marketing Showcase</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
