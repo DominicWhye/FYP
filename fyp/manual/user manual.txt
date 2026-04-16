@@ -1,0 +1,4 @@
+setting up of program file:
+
+
+pip install deepface opencv-python tf-keras
