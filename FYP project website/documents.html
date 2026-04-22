@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Document Vault</title>
+    <meta
+      name="description"
+      content="Upload and manage documents for the Facial Recognition Attendance System project."
+    />
+    <link rel="stylesheet" href="documents.css" />
+  </head>
+  <body>
+    <header class="vault-header">
+      <a class="brand" href="index.html">VisionAttend</a>
+      <nav>
+        <a href="index.html">Marketing Site</a>
+        <a href="#upload">Upload</a>
+        <a href="#library">Library</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="vault-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Project Document Vault</p>
+          <h1>File uploads</h1>
+          <p>
+            Upload portal for storing Final Year Project documents with searchable records
+          </p>
+        </div>
+
+        <div class="hero-panel" aria-label="Document storage summary">
+          <span class="status-dot"></span>
+          <p>Local database</p>
+          <strong id="documentCount">0 documents</strong>
+          
+        </div>
+      </section>
+
+      <section class="vault-grid">
+        <form class="upload-card" id="uploadForm" enctype="multipart/form-data">
+          <div class="section-title" id="upload">
+            <p class="eyebrow">Upload</p>
+            <h2>Add a document</h2>
+          </div>
+
+          <label class="field">
+            <span>Document title</span>
+            <input id="title" name="title" type="text" placeholder="Example: FYP Proposal Draft" required />
+          </label>
+
+          <label class="field">
+            <span>Category</span>
+            <select id="category" name="category">
+              <option value="Reflection">Reflection</option>
+              <option value="Proposal">Proposal</option>
+              <option value="Report">Report</option>
+              <option value="Presentation">Presentation</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Notes</span>
+            <textarea id="notes" name="notes" rows="4" placeholder="Short description of file/documents"></textarea>
+          </label>
+
+          <label class="drop-zone" id="dropZone">
+            <input id="file" name="file" type="file" required />
+            <span class="drop-icon">+</span>
+            <strong>Drop your file here or click to browse</strong>
+            <small>PDF, DOCX, PPTX, images, ZIP files, and other project materials</small>
+          </label>
+
+          <button class="primary-button" type="submit">Upload Document</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+
+        <section class="library-card" id="library">
+          <div class="library-top">
+            <div class="section-title">
+              <p class="eyebrow">Library</p>
+              <h2>Stored documents</h2>
+            </div>
+
+            <label class="search-field">
+              <span>Search documents</span>
+              <input id="searchInput" type="search" placeholder="Search by title, category, notes, or filename" />
+            </label>
+          </div>
+
+          <div class="document-list" id="documentList">
+            <div class="empty-state">
+              <strong>No documents yet</strong>
+              <span>Upload your first project file to start building the vault</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="documents.js"></script>
+  </body>
+</html>
